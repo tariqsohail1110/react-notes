@@ -16,6 +16,11 @@ function App() {
   const addValue = () => {
     if(counter + 1 === 20) {setIsFirstDiasbled(true)};
     setCounter(counter + 1);
+    // setCounter(prevCounter => prevCounter + 1);
+    // setCounter(prevCounter => prevCounter + 1);
+    // setCounter(prevCounter => prevCounter + 1);
+    // setCounter(prevCounter => prevCounter + 1);
+    // setCounter gives a callback function, and react bundles the changes, so to update multiplr changes we use callback in setCounter
   }
 
   const removeValue = () => {
